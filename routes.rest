@@ -9,3 +9,12 @@ GET http://localhost:8080/contacts/62681217e481590b6bb0a8cc
 GET http://localhost:8080/contacts/6268127ee481590b6bb0a8cd
 ###
 GET http://localhost:8080/
+###
+GET https://cse341-byuispring2022.herokuapp.com/contacts/
+###
+GET https://cse341-byuispring2022.herokuapp.com/contacts/62680fd3e481590b6bb0a8cb
+###
+GET https://cse341-byuispring2022.herokuapp.com/contacts/62681217e481590b6bb0a8cc
+###
+GET https://cse341-byuispring2022.herokuapp.com/contacts/6268127ee481590b6bb0a8cd
+
