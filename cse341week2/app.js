@@ -13,7 +13,7 @@ app
         res.setHeader('Access-Control-Allow-Origin', '*');
         next();
     })
-    .use('/index', indexRoutes);
+    .use('/', indexRoutes);
 
 mongodb.initDb((err, mongodb) => {
     if (err) {
