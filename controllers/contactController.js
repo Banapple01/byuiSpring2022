@@ -79,12 +79,12 @@ const deleteData = async (req, res) => {
 		.getDb()
 		.db()
 		.collection("contacts")
-		.remove({ _id: userId }, true);
-    if (response.deleteCount > 0) {
+		.deleteOne({ _id: userId }, true);
+    if (result.deletedCount > 0) {
         res.status(204).send();
     } else {
         res.status(500).json(
-            response.error || "Something went wrong while deleting the data."
+            result.error || "Something went wrong while deleting the data."
         );
     }
 };

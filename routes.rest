@@ -29,6 +29,17 @@ content-type: application/json
     "birthday": "10/22/73"
 }
 ###
+POST http://localhost:8080/contacts/ HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName": "Joeyeetee",
+    "lastName": "Hasslehoff",
+    "email": "hassle@test.com",
+    "favoriteColor": "Green",
+    "birthday": "10/22/73"
+}
+###
 PUT https://cse341-byuispring2022.herokuapp.com/contacts/6276d64ebca3d9e74150cffb HTTP/1.1 
 content-type: application/json
 
@@ -39,5 +50,20 @@ content-type: application/json
     "favoriteColor": "Greeny",
     "birthday": "10/22/73"
 }
+###
+PUT http://localhost:8080/contacts/6276d64ebca3d9e74150cffb HTTP/1.1 
+content-type: application/json
 
-# DELETE
+{
+    "firstName": "Joey",
+    "lastName": "Hasslehoffy",
+    "email": "hassle@test.com",
+    "favoriteColor": "Greeny",
+    "birthday": "10/22/73"
+}
+
+###
+DELETE https://cse341-byuispring2022.herokuapp.com/contacts/6276d64ebca3d9e74150cffb HTTP/1.1 
+
+###
+DELETE  http://localhost:8080/contacts/6276e5335926e03c693dc4a9 HTTP/1.1 
