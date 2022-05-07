@@ -17,4 +17,17 @@ GET https://cse341-byuispring2022.herokuapp.com/contacts/62680fd3e481590b6bb0a8c
 GET https://cse341-byuispring2022.herokuapp.com/contacts/62681217e481590b6bb0a8cc
 ###
 GET https://cse341-byuispring2022.herokuapp.com/contacts/6268127ee481590b6bb0a8cd
+###
+POST https://cse341-byuispring2022.herokuapp.com/contacts HTTP/1.1
+Content-Type: application/json
+{
+    "firstName": "Joey",
+    "lastName": "Hasslehoff",
+    "email": "hassle@test.com",
+    "favoriteColor": "Green",
+    "birthday": "10/22/73"
+}
 
+PUT 
+
+DELETE
