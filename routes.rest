@@ -28,7 +28,16 @@ content-type: application/json
     "favoriteColor": "Green",
     "birthday": "10/22/73"
 }
+###
+PUT https://cse341-byuispring2022.herokuapp.com/contacts/6276d64ebca3d9e74150cffb HTTP/1.1 
+content-type: application/json
 
-PUT 
+{
+    "firstName": "Joey",
+    "lastName": "Hasslehoffy",
+    "email": "hassle@test.com",
+    "favoriteColor": "Green",
+    "birthday": "10/22/73"
+}
 
-DELETE
+# DELETE

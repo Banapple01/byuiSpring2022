@@ -33,13 +33,13 @@ const createData = async (req, res) => {
 		favoriteColor: req.body.favoriteColor,
 		birthday: req.body.birthday,
 	};
-    // console.log(newContact)
+    console.log(newContact)
 	const response = await mongodb
 		.getDb()
 		.db()
 		.collection("contacts")
 		.insertOne(newContact);
-    // console.log(response)
+    console.log(response)
 	if (response.acknowledged) {
 		res.status(201).json(response);
 	} else {
@@ -63,11 +63,12 @@ const updateData = async (req, res) => {
 		.db()
 		.collection("contacts")
 		.find({ _id: userId }, upContact);
-	if (response.modifiedCount > 0) {
+    console.log(result)
+	if (result.modifiedCount > 0) {
 		res.status(204).send();
 	} else {
 		res.status(500).json(
-			response.error || "Something went wrong with the update."
+			result.error || "Something went wrong with the update."
 		);
 	}
 };
