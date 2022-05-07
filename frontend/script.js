@@ -8,7 +8,7 @@ async function apiFetch(url) {
 }
 
 const getData = async () => {
-  const data = await apiFetch('http://localhost:8080/index');
+  const data = await apiFetch('http://localhost:8080/');
   displayAllData(data);
 };
 
