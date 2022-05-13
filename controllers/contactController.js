@@ -2,6 +2,8 @@ const { response } = require("express");
 const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
+const apiKey = 'Ezl0961tEpx2UxTZ5v2uKFK91qdNAr5npRlMT1zLcE3Mg68Xwaj3N8Dyp1R8IvFenrVwHRllOUxF0Og00l0m9NcaYMtH6Bpgdv7N';
+
 const getData = async (req, res, next) => {
 	const result = await mongodb.getDb().db().collection("contacts").find();
 	result.toArray().then((lists) => {

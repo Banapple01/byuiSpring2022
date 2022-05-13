@@ -40,7 +40,7 @@ content-type: application/json
     "birthday": "10/22/73"
 }
 ###
-PUT https://cse341-byuispring2022.herokuapp.com/contacts/6276d64ebca3d9e74150cffb HTTP/1.1 
+PUT https://cse341-byuispring2022.herokuapp.com/contacts/6276e5d0680a9f5a7686dee4 HTTP/1.1 
 content-type: application/json
 
 {
@@ -63,7 +63,7 @@ content-type: application/json
 }
 
 ###
-DELETE https://cse341-byuispring2022.herokuapp.com/contacts/6276d64ebca3d9e74150cffb HTTP/1.1 
+DELETE https://cse341-byuispring2022.herokuapp.com/contacts/6276e5d0680a9f5a7686dee4 HTTP/1.1 
 
 ###
 DELETE  http://localhost:8080/contacts/6276e5335926e03c693dc4a9 HTTP/1.1 
