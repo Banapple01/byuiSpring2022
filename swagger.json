@@ -2,10 +2,10 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
-    "description": "Temples",
+    "description": "Contacts",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "https://cse341-byuispring2022.herokuapp.com/",
   "basePath": "/",
   "schemes": [
     "http"
